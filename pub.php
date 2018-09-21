@@ -12,8 +12,8 @@
     $pos = strpos($lineMsg, ":");
     if($pos){
       $splitMsg = explode(":", $lineMsg);
-      $topic = $splitMsg[0];
-      $msg = $splitMsg[1];
+      $topic = $splitMsg[OFF];
+      $msg = $splitMsg[ON];
       pubMqtt($topic,$msg);
     }else{
       $topic = $Topic;
